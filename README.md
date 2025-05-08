@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Organo - Gestão de Organograma
 
 Organo é um projeto fictício de gestão de pessoas desenvolvido durante o estudo sobre React e JavaScript.
@@ -77,8 +76,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Organo
-
-## Organo é um projeto fictício de gestão de pessoas desenvolvido em React e JavaScript.
->>>>>>> dfe37fd6a5c49af0ed1a3fdeacf0789d78724460
