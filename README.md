@@ -10,6 +10,9 @@ Organo é um projeto fictício de gestão de pessoas desenvolvido durante o estu
 npx create-react-app ornago
 ```
 
+---
+---
+
 ## Scripts disponíveis
 
 No diretório do projeto você pode executar:
