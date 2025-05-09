@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400,600;1,400,600&display=swap');
+
+.campo-texto {
+  margin: 24px 0;
+}
+
+.campo-texto label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;  
+  color: #212121;
+}
+
+.campo-texto input {
+  /* Box Model */
+  width: 100%;
+  padding: 30px 21px;
+  border: none;
+  box-sizing: border-box;
+
+  /* Tipografia */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  
+  /* Aparência */
+  background-color: #FFF;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06); /* deslocamento: x, y, z */
+}
