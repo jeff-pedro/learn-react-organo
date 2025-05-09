@@ -1,13 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .banner {
   background-color: #6278F7;
   text-align: center;
 }
 
 .banner img {
+  display: block;
   max-width: 100%;
+  margin: 0 auto;
 }
