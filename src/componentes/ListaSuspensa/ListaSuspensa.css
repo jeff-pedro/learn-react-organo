@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400,600;1,400,600&display=swap');
+
+.lista-suspensa {
+  position: relative;
+  margin: 24px 0;
+}
+
+.lista-suspensa label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;  
+  color: #212121;
+}
+
+.lista-suspensa select {
+  width: 100%;
+  padding: 30px 23px;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #FFF;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+  appearance: none; /* Remove icove de seta padrão */
+}
+
+.lista-suspensa::after {
+  content: "\25BC"; /* Ícone de seta */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateX(-60%) scaleX(1.5); /* Estica horizontalmente */
+  pointer-events: none; /* Torna a seta invisível a eventos */
+}
