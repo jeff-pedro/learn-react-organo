@@ -1,6 +1,7 @@
 import './Formulario.css';
 import CampoTexto from "../CampoTexto";
 import ListaSuspensa from '../ListaSuspensa';
+import Botao from '../Botao';
 
 const Formulario = () => {
   const itens = [
@@ -22,17 +23,7 @@ const Formulario = () => {
         <CampoTexto label="Cargo" placeholder="Digite seu cargo" />
         <CampoTexto label="Imagem" placeholder="Informe o endereço da imagem" />
         <ListaSuspensa label="Time" itens={itens}/>
-
-        {/* <div>
-          <label for="select-time">Time</label>
-          <select name="select-time">
-            <option value="programacao">Programação</option>
-            <option value="front-end">Front-End</option>
-            <option value="back-end">Back-End</option>
-            <option value="data-science">Data Science</option>
-          </select>
-        </div>
-        <button type="submit">Criar card</button> */}
+        <Botao action="submit" btnNome="Criar card" />
       </form> 
     </section>
   );
