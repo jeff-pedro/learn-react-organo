@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+.time {
+  padding: 32px;
+  text-align: center;
+}
+
+.time h3 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-family: "Prata", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.time hr {
+  margin: 0px auto;
+  width: 32px;
+  height: 4px;
+  border: none;
+}

@@ -32,6 +32,6 @@
   position: absolute;
   top: 50%;
   right: 10px;
-  transform: translateX(-60%) scaleX(1.5); /* Estica horizontalmente */
+  transform: translateX(-60%) translateY(25%) scaleX(1.5); /* Estica horizontalmente */
   pointer-events: none; /* Torna a seta invisível a eventos */
 }
