@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.rodape {
+  position: relative;
+  background-color: #6278F7;
+  color: #FFF;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+
+.rodape::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/public/imagens/fundo.png');
+  pointer-events: none;
+}
+
+.rodape .social ul {
+  padding: 0;
+}
+
+.rodape .social ul li {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.rodape .social ul li:last-child {
+  margin-right: 0;
+}
+
+.rodape .social img {
+  width: 35px;
+}
+
+.rodape .social ul li a img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+.rodape p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* .rodape .fundo {
+  position: absolute;   
+} */
