@@ -3,11 +3,11 @@
 .formulario {
   display: flex;
   justify-content: center;
-  margin: 80px 0;
+  padding: 80px 18%;
 }
 
 .formulario form {
-  width: 50%;
+  width: 100%;
   padding: 33px 96px;
   border: none;
   border-radius: 20px;
