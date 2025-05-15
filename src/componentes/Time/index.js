@@ -2,8 +2,13 @@ import Colaborador from '../Colaborador';
 import './Time.css';
 
 const Time = ({ nome, corPrimaria, corSecundaria, colaboradores }) => {
+  const style = {
+    backgroundColor: corSecundaria,
+  };
+
   return (
-    (colaboradores.length > 0) && <section className='time' style={{ backgroundColor: corSecundaria }}>
+    (colaboradores.length > 0) && (
+      <section className='time' style={style}>
       <h3>{nome}</h3>
       <hr style={{ backgroundColor: corPrimaria }} />
       <div className='colaboradores'>
@@ -17,7 +22,7 @@ const Time = ({ nome, corPrimaria, corSecundaria, colaboradores }) => {
           />
         )}
       </div>
-    </section>
+    </section>)
   );
 }
 

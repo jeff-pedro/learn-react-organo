@@ -9,6 +9,7 @@
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  z-index: 1; /* Camada base */
 }
 
 .rodape::after {
@@ -20,6 +21,10 @@
   height: 100%;
   background-image: url('/public/imagens/fundo.png');
   pointer-events: none;
+}
+
+.rodape .social {
+  z-index: 3; /* Camada do topo */
 }
 
 .rodape .social ul {
@@ -44,12 +49,13 @@
   transition: 0.3s;
 }
 
+.rodape .logo {
+  z-index: 3;
+}
+
 .rodape p {
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 500;
+  z-index: 3;
 }
-
-/* .rodape .fundo {
-  position: absolute;   
-} */

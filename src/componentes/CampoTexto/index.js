@@ -8,8 +8,8 @@ const CampoTexto = ({ label, placeholder, obrigatorio, valor, aoAlterado }) => {
 
   return (
     <div className="campo-texto">
-      <label>{label}</label>
-      <input value={valor} onChange={aoDigitado} type="text" placeholder={placeholder} required={obrigatorio}></input>
+      <label htmlFor={label}>{label}</label>
+      <input id={label} value={valor} onChange={aoDigitado} type="text" placeholder={placeholder} required={obrigatorio}></input>
     </div>
   );  
 }

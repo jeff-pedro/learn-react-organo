@@ -3,16 +3,21 @@
 .formulario {
   display: flex;
   justify-content: center;
-  padding: 80px 18%;
+  padding: 80px 20%;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .formulario form {
-  width: 100%;
+  flex: 1;
+  min-width: 280px;
+  max-width: 1200px;
   padding: 33px 96px;
   border: none;
   border-radius: 20px;
   background-color: #F6F6F6;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
 }
 
 .formulario h2 {

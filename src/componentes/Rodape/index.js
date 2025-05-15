@@ -24,7 +24,7 @@ const Rodape = () => {
         </ul>
       </section>
 
-      <section>
+      <section className='logo'>
         <img src='/imagens/logo.png' alt='Organo' />
       </section>
       
