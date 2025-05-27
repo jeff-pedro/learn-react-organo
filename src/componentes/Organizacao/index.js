@@ -8,10 +8,8 @@ const Organizacao = ({ titulo, times, colaboradores, aoDeletarColaborador, mudar
         {/* Lista de Times */}
         {times.map(time => 
           <Time 
-            key={time.nome}
+            key={time.id}
             time={time}
-            corPrimaria={time.corPrimaria}
-            corSecundaria={time.corSecundaria}
             colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
             aoDeletarColaborador={aoDeletarColaborador}
             mudarCor={mudarCorTime}

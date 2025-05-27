@@ -11,13 +11,13 @@ const Time = ({ time, colaboradores, aoDeletarColaborador, mudarCor }) => {
   return (
     (colaboradores.length > 0) && (
       <section className='time' style={style}>
-        <input value={time.cor} onChange={evento => mudarCor(evento.target.value, time.nome)} type='color' className='input-cor' />
+        <input value={time.cor} onChange={ evento => mudarCor(evento.target.value, time.id) } type='color' className='input-cor' />
         <h3>{time.nome}</h3>
         <hr style={{ backgroundColor: hexToRgba(time.cor, '0.6')}} />
         <div className='colaboradores'>
           {colaboradores.map(colaborador =>
               <Colaborador 
-                key={colaborador.nome}
+                key={colaborador.id}
                 nome={colaborador.nome}  
                 cargo={colaborador.cargo}
                 imagem={colaborador.imagem}
