@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .colaborador {
+  position: relative;
   width: 280px; 
 }
 
@@ -41,4 +42,11 @@
   font-weight: 400;
   line-height: 22px;
   color: #212121;
+}
+
+.colaborador__deletar {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
 }

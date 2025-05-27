@@ -1,7 +1,7 @@
 import Colaborador from '../Colaborador';
 import './Time.css';
 
-const Time = ({ nome, corPrimaria, corSecundaria, colaboradores }) => {
+const Time = ({ nome, corPrimaria, corSecundaria, colaboradores, aoDeletarColaborador }) => {
   const style = {
     backgroundColor: corSecundaria,
   };
@@ -12,14 +12,15 @@ const Time = ({ nome, corPrimaria, corSecundaria, colaboradores }) => {
         <h3>{nome}</h3>
         <hr style={{ backgroundColor: corPrimaria }} />
         <div className='colaboradores'>
-          {colaboradores.map(colaborador => 
-            <Colaborador 
-              key={colaborador.nome}
-              nome={colaborador.nome}  
-              cargo={colaborador.cargo}
-              imagem={colaborador.imagem}
-              corDeFundo={corPrimaria}
-            />
+          {colaboradores.map(colaborador =>
+              <Colaborador 
+                key={colaborador.nome}
+                nome={colaborador.nome}  
+                cargo={colaborador.cargo}
+                imagem={colaborador.imagem}
+                corDeFundo={corPrimaria}
+                aoDeletar={aoDeletarColaborador}
+              />
           )}
         </div>
       </section>)

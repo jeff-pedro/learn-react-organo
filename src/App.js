@@ -49,6 +49,12 @@ function App() {
     setColaboradores([...colaboradores, colaborador]);
   }
 
+  const deletarColaborador = (colaborador) => {
+    const novosColaboradores = colaboradores.filter((c) => c.nome !== colaborador)
+    setColaboradores([...novosColaboradores]);
+    // console.log('deletando colaborador: ', colaborador);
+  }
+
   return (
     <div>
         <Banner />
@@ -60,6 +66,7 @@ function App() {
           titulo='Minha Organização:'
           times={times}
           colaboradores={colaboradores}
+          aoDeletarColaborador={deletarColaborador}
         />
         <Rodape />
     </div>
