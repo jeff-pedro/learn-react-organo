@@ -1,7 +1,7 @@
 import Time from '../Time';
 import './Organizacao.css';
 
-const Organizacao = ({ titulo, times, colaboradores, aoDeletarColaborador })  => {
+const Organizacao = ({ titulo, times, colaboradores, aoDeletarColaborador, mudarCorTime })  => {
   return (
     <details className='organizacao' open>
       <summary>{titulo}</summary>
@@ -9,11 +9,12 @@ const Organizacao = ({ titulo, times, colaboradores, aoDeletarColaborador })  =>
         {times.map(time => 
           <Time 
             key={time.nome}
-            nome={time.nome}
+            time={time}
             corPrimaria={time.corPrimaria}
             corSecundaria={time.corSecundaria}
             colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
             aoDeletarColaborador={aoDeletarColaborador}
+            mudarCor={mudarCorTime}
           />
         )}
     </details>

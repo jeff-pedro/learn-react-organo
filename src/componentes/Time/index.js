@@ -1,25 +1,18 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import Colaborador from '../Colaborador';
 import './Time.css';
 
-const Time = ({ nome, corPrimaria, corSecundaria, colaboradores, aoDeletarColaborador }) => {
-  const [backgroundColor, setBackgroundColor] = useState(corSecundaria);
-  
+const Time = ({ time, colaboradores, aoDeletarColaborador, mudarCor }) => {
   const style = {
-    backgroundColor,
+    backgroundColor: time.corSecundaria,
   };
-
-  const trocaCorBackround = (e) => {
-    e.preventDefault();
-    setBackgroundColor(e.target.value);
-  }
 
   return (
     (colaboradores.length > 0) && (
       <section className='time' style={style}>
-        <input value={backgroundColor} onChange={trocaCorBackround} type='color' className='input-cor' />
-        <h3>{nome}</h3>
-        <hr style={{ backgroundColor: corPrimaria }} />
+        <input value={time.corSecundaria} onChange={evento => mudarCor(evento.target.value, time.nome)} type='color' className='input-cor' />
+        <h3>{time.nome}</h3>
+        <hr style={{ backgroundColor: time.corPrimaria }} />
         <div className='colaboradores'>
           {colaboradores.map(colaborador =>
               <Colaborador 
@@ -27,7 +20,7 @@ const Time = ({ nome, corPrimaria, corSecundaria, colaboradores, aoDeletarColabo
                 nome={colaborador.nome}  
                 cargo={colaborador.cargo}
                 imagem={colaborador.imagem}
-                corDeFundo={corPrimaria}
+                corDeFundo={time.corPrimaria}
                 aoDeletar={aoDeletarColaborador}
               />
           )}
