@@ -18,9 +18,7 @@ const Time = ({ time, colaboradores, aoDeletarColaborador, mudarCor }) => {
           {colaboradores.map(colaborador =>
               <Colaborador 
                 key={colaborador.id}
-                nome={colaborador.nome}  
-                cargo={colaborador.cargo}
-                imagem={colaborador.imagem}
+                colaborador={colaborador}
                 corDeFundo={time.cor}
                 aoDeletar={aoDeletarColaborador}
               />

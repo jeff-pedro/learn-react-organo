@@ -231,10 +231,8 @@ function App() {
     }));
   }
 
-  const deletarColaborador = (colaborador) => {
-    // const novosColaboradores = colaboradores.filter((c) => c.nome !== colaborador)
-    // setColaboradores([...novosColaboradores]);
-    console.log('deletando colaborador: ', colaborador);
+  const deletarColaborador = (id) => {
+    setColaboradores(colaboradores.filter((colaborador) => colaborador.id !== id));
   }
 
   return (
