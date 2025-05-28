@@ -1,7 +1,7 @@
 import Time from '../Time';
 import './Organizacao.css';
 
-const Organizacao = ({ titulo, times, colaboradores, aoDeletarColaborador, mudarCorTime })  => {
+const Organizacao = ({ titulo, times, colaboradores, aoDeletarColaborador, aoFavoritarColaborador, mudarCorTime })  => {
   return (
     <details className='organizacao' open>
       <summary>{titulo}</summary>
@@ -12,6 +12,7 @@ const Organizacao = ({ titulo, times, colaboradores, aoDeletarColaborador, mudar
             time={time}
             colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
             aoDeletarColaborador={aoDeletarColaborador}
+            aoFavoritarColaborador={aoFavoritarColaborador}
             mudarCor={mudarCorTime}
           />
         )}
