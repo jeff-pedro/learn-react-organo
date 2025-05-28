@@ -29,3 +29,8 @@
   background-color: #FFF;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06); /* deslocamento: x, y, z */
 }
+
+.campo-color input {
+  height: 40px;
+  padding: 5px 21px;
+}
