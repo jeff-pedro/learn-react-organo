@@ -237,7 +237,7 @@ function App() {
   return (
     <div>
         <Banner />
-        <Formulario 
+        <Formulario sttc  
           cadastrarTime={cadastrarTime}
           times={times.map(time => time.nome)}
           aoCadastrar={colaborador => setColaboradores([...colaboradores, { ...colaborador, id: uuidv4() }])}
