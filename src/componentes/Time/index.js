@@ -5,7 +5,7 @@ import './Time.css';
 const Time = ({ time, colaboradores, aoDeletarColaborador, aoFavoritarColaborador, mudarCor }) => {
   const style = {
     backgroundImage: 'url(/imagens/fundo.png)',
-    backgroundColor: hexToRgba(time.cor, '0.6'),
+    backgroundColor: hexToRgba(time.cor, '0.5'),
   };
 
   return (

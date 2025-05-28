@@ -4,15 +4,16 @@
   position: relative;
   background-color: #6278F7;
   color: #FFF;
-  padding: 80px 10%;
+  padding: 80px 4%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   z-index: 1; /* Camada base */
 }
 
-.rodape::after {
+/* Background */
+/* .rodape::after {
   content: '';
   position: absolute;
   top: 0;
@@ -21,7 +22,7 @@
   height: 100%;
   background-image: url('/public/imagens/fundo.png');
   pointer-events: none;
-}
+} */
 
 .rodape .social {
   z-index: 3; /* Camada do topo */

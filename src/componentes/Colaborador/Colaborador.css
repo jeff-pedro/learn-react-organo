@@ -2,7 +2,9 @@
 
 .colaborador {
   position: relative;
-  width: 280px; 
+  width: 280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .colaborador .colaborador__cabecalho {
@@ -22,6 +24,7 @@
   border-radius: 0px 0px 10px 10px;
   padding-top: 90px;
   padding-bottom: 60px;
+  flex: 1;
 }
 
 .colaborador .colaborador__rodape h4 {
