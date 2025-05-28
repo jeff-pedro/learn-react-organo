@@ -217,11 +217,6 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState(inicial);
 
-  const aoNovoColaboradorAdicionado = (colaborador) => {
-    const novoColaborador = { ...colaborador, id: uuidv4() }
-    setColaboradores([...colaboradores, novoColaborador]);
-  }
-
   const mudarCorTime = (cor, id) => {
     setTimes(times.map(time => {
       if(time.id === id) {
@@ -235,12 +230,17 @@ function App() {
     setColaboradores(colaboradores.filter((colaborador) => colaborador.id !== id));
   }
 
+  const cadastrarTime = (time) => {
+    setTimes([...times, { ...time, id: uuidv4() } ]);
+  } 
+
   return (
     <div>
         <Banner />
         <Formulario 
-          aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}
+          cadastrarTime={cadastrarTime}
           times={times.map(time => time.nome)}
+          aoCadastrar={colaborador => setColaboradores([...colaboradores, { ...colaborador, id: uuidv4() }])}
         />
         <Organizacao 
           titulo='Minha Organização:'
