@@ -4,7 +4,7 @@ import ListaSuspensa from '../ListaSuspensa';
 import Botao from '../Botao';
 import { useState } from 'react';
 
-const Formulario = ({ times, aoCadastrar, cadastrarTime }) => {
+const Formulario = ({ times, aoCadastrar, cadastrarTime, ehVisivel }) => {
   const [nome, setNome] = useState('');
   const [cargo, setCargo] = useState('');
   const [imagem, setImagem] = useState('');
@@ -40,8 +40,10 @@ const Formulario = ({ times, aoCadastrar, cadastrarTime }) => {
     setCorTime('');
   }
 
+  const visibilidadeFormulario = ehVisivel ? { display: 'none' } : {}
+
   return (
-    <section className='formulario__container'>
+    <section className='formulario__container' style={visibilidadeFormulario}>
       <form className='formulario' onSubmit={aoSubmeter}>
         <h2>Preencha os dados para criar o card do colaborador.</h2>
         <Campo 

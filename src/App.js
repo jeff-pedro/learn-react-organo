@@ -30,7 +30,7 @@ function App() {
     {
       id: uuidv4(),
       nome: 'UX e Design',
-      cor : '#DB6EBF  ',
+      cor : '#DB6EBF',
     },
     {
       id: uuidv4(),
@@ -241,6 +241,8 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState(inicial);
 
+  const [visibilidade, setVisibilidade] = useState(true);
+
   const mudarCorTime = (cor, id) => {
     setTimes(times.map(time => {
       if(time.id === id) {
@@ -265,10 +267,15 @@ function App() {
     }));
   }
 
+  const alternarVibilidadeFormulario = () => {
+    setVisibilidade(visibilidade => !visibilidade);
+  }
+
   return (
     <div>
         <Banner />
-        <Formulario sttc  
+        <Formulario
+          ehVisivel={visibilidade}
           cadastrarTime={cadastrarTime}
           times={times.map(time => time.nome)}
           aoCadastrar={colaborador => setColaboradores([...colaboradores, { ...colaborador, id: uuidv4() }])}
@@ -280,6 +287,7 @@ function App() {
           aoDeletarColaborador={deletarColaborador}
           aoFavoritarColaborador={resolverFavorito}
           mudarCorTime={mudarCorTime}
+          aoAlternarVisibilidadeFormulario={alternarVibilidadeFormulario}
         />
         <Rodape />
     </div>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
-.organizacao summary {
+.organizacao h1 {
   position: relative;
   display: flex;
   justify-content: center;
@@ -12,11 +12,11 @@
   color: #6278F7;
   list-style: none;
   pointer-events: none;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 /* Linha abaixo do texto */
-.organizacao summary::after {
+.organizacao h1::after {
   content: '';
   position: absolute;
   bottom: 0; /* bottom: 0; para linha embaixo */
@@ -25,21 +25,20 @@
   background-color: #6278F7;
 }
 
-/* Icone do summary quando aberto/fechado */
-.organizacao[open] summary::before,
-.organizacao:not([open]) summary::before {
-  content: '';
+.organizacao__titulo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 4%;
+}
+
+.organizacao__titulo img {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 20%;
+  bottom: 50%;
+  right: 0;
   height: 70px;
   width: 70px;
-  margin: auto 0;
-  background-image: url('../../../public/imagens/botao-add.png');
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 50%;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -47,15 +46,11 @@
   pointer-events: auto;
 }
 
-.organizacao:not([open]) summary::before {
-  background-image: url('../../../public/imagens/botao-minus.png');
-}
-
-.organizacao summary:hover::before {
+.organizacao__titulo img:hover {
   transform: scale(1.1);
 }
 
-.organizacao summary:active::before {
+.organizacao__titulo img:active {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   transform: translateY(2px);
 }
