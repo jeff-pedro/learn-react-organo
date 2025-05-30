@@ -42,7 +42,7 @@
       "nome": "JULIANA AMOASEI",
       "cargo": "Desenvolvedora de software e instrutora",
       "imagem": "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
-      "favorito": false,
+      "favorito": true,
       "time": "Programação"
     },
     {
@@ -62,7 +62,7 @@
       "time": "Programação"
     },
     {
-      "id": "68a12243-fff8-4e74-8b13-4e979bc7b35f",
+      "id": "06b943ff-57b4-4abd-b38d-a7108ed8bb55",
       "nome": "PAULO SILVEIRA",
       "cargo": "Hipster e CEO da Alura",
       "imagem": "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",

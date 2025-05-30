@@ -10,27 +10,25 @@ Organo é um projeto fictício de gestão de pessoas desenvolvido durante o estu
 npx create-react-app ornago
 ```
 
-## 👨🏽‍💻 Scripts disponíveis
+## 👨🏽‍💻 Getting Started
 
-No diretório do projeto você pode executar:
+Instale as dependências
 
-### `npm start`
+```bash
+npm install
+```
 
-Execute a aplicação em ambiente de desenvolvimento.\
-Abra [http://localhost:3000](http://localhost:3000) para vê-la em seu navegador.
+Suba a API Mock passando `db.json`
 
-A página irá recarregar quando houver mudanças.\
-Você também pode ver erros de "lint" no console.
+```bash
+npx json-server --watch db.json
+```
 
-### `npm run build`
+Inicie a aplicação
 
-Construa o app para produção no pasta `build`.\
-Isto empacota corretamente React no modo de produção e otimiza a construção para uma melhor performance.
-
-A construção é reduzida e nos arquivos são inclídos os hashes.\
-Sua aplicação está pronta para ser implantada!
-
-Veja sobre na seção [deployment](https://facebook.github.io/create-react-app/docs/deployment) para mais informações.
+```bash
+npm start
+```
 
 ## 📦 Deployment
 

@@ -11,7 +11,7 @@ const ListaSuspensa = ({ label, valor, itens, obrigatorio, aoAlterado }) => {
         value={valor}
       >
         <option value="">Selecione...</option>
-        { itens.map(item => <option key={item}>{item}</option>) }
+        { itens.map(item => <option key={item.id}>{item}</option>) }
       </select>
     </div>
   );

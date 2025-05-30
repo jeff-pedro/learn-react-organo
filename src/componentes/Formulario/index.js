@@ -40,7 +40,7 @@ const Formulario = ({ times, aoCadastrar, cadastrarTime, ehVisivel }) => {
     setCorTime('');
   }
 
-  const visibilidadeFormulario = ehVisivel ? { display: 'none' } : {}
+  const visibilidadeFormulario = ehVisivel ? {} : { display: 'none' };
 
   return (
     <section className='formulario__container' style={visibilidadeFormulario}>
